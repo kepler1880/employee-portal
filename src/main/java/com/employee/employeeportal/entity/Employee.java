@@ -22,7 +22,7 @@ public class Employee {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "EMP_ID")
+	@Column(name = "ID")
 	private Long id;
 
 	@Column(name = "FIRST_NAME")

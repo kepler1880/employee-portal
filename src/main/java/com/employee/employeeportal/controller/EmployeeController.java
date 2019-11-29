@@ -38,6 +38,7 @@ public class EmployeeController {
 		if (!employeeList.isEmpty()) {
 			return new ResponseEntity<List<Employee>>(employeeList, HttpStatus.OK);
 		}
+		//TODO: added to check exception case
 		throw new EmployeeException(ErrorConstants.EMPL_FETCH_FAIL.getErrorCode(),
 				ErrorConstants.EMPL_FETCH_FAIL.getErrorMsg());
 
